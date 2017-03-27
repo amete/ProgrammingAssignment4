@@ -103,4 +103,4 @@ rm(list = "melted_data")
 
 # Write out the data for future use - OPTIONAL
 write.table(selected_data, file = "./selected_data.txt")
-write.table(tidy_data, file = "./tidy_data.txt")
+write.table(tidy_data, file = "./tidy_data.txt",row.name=FALSE)

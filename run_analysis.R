@@ -101,6 +101,6 @@ melted_data <- melt(selected_data,
 tidy_data   <- dcast(melted_data, subjectID + activityName ~ variable, mean)
 rm(list = "melted_data")
 
-# Write out the data for future use - OPTIONAL
+# Write out the data for future use
 write.table(selected_data, file = "./selected_data.txt")
 write.table(tidy_data, file = "./tidy_data.txt",row.name=FALSE)

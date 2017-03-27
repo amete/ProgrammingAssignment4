@@ -1,7 +1,13 @@
-# Read the train and test datasets
-library(data.table)
-library(tidyr)
-library(dplyr)
+# Load the required packages, download if not existing
+if(!require(data.table)) {
+    install.packages("data.table")
+}
+if(!require(tidyr)) {
+    install.packages("tidyr")
+}
+if(!require(dplyr)) {
+    install.packages("dplyr")
+}
 
 # Read the data for the training and testing sets and merge them 
 # Assuming colmns are the same measurements we make a simple bind_rows
